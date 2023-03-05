@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="5.516">
+<testcase classname="Validate API key, GetWeather, Register Stations" name="Get Weather" time="3.273">
+<system-out><![CDATA[Given User hits the weather API URI.........................................passed
+When getWeather API finds valid API key and valid location..................passed
+Then getWeather API provides the weather details............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate API key, GetWeather, Register Stations" name="Register New Station" time="1.261">
+<system-out><![CDATA[Given User hits the registerStation API URI.................................passed
+When API finds valid API key and valid post request.........................passed
+Then registerStation API registers the station details and respond with unique ID.passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate API key, GetWeather, Register Stations" name="Invalid API Key" time="0.421">
+<system-out><![CDATA[Given User hits the weather API URI without API key.........................passed
+When getWeather API rejects the request.....................................passed
+And getWeather API returns authentication error.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
